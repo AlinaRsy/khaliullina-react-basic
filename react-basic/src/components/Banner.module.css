@@ -1,0 +1,24 @@
+.banner {
+    background: url('../assets/bannerimg.png') center/ cover no-repeat;
+    padding: 138px 0 179px 0;
+}
+.banner__inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 40px;
+}
+.banner__text {
+    color: white;
+    font-size: 32px;
+}
+.banner__btn {
+    display: inline-block;
+    font-size: 24px;
+    color: white;
+    background-color: #735184;
+    padding: 34px 43px 34px 43px;
+    border-radius: 20px;
+}
