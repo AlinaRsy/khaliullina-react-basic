@@ -1,0 +1,6 @@
+.catalog__inner {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(min(393px, 100%), 1fr));
+}

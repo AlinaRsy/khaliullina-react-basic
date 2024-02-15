@@ -1,0 +1,42 @@
+.header {
+    background-color: #160d09;
+    padding: 8px 0 8px 0;
+    border-bottom: 1px solid #99c772;
+}
+.header__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    align-items: flex-end;
+}
+.header__logo {
+    font-size: 42px;
+    color: #99c772;
+    font-weight: 700;
+    text-shadow: 2px 2px 1px #bd7b59;
+    justify-self: center;
+}
+.header__nav {
+    display: flex;
+    gap: 30px;
+}
+.nav__elem {
+    font-size: 16px;
+    color: #99c772;
+}
+.header__btns {
+    justify-self: end;
+    align-items: flex-end;
+    display: flex;
+    gap: 20px;
+}
+.header__btns svg{
+    width: 30px;
+}
+.header__btns svg path{
+    stroke: #99c772;
+    fill: #99c772;
+}
+.nav__link:first-child svg path{
+    stroke-width: 2.5px;
+    fill: none;
+}
