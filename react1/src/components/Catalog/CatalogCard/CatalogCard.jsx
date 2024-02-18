@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import s from './CatalogCard.module.css';
 export default function CatalogCard(props){
     return(
             <div class={s.catalog__item}>
-                <div class={s.catalog__img}>
+                <Link to={`/catalog/${props.id}`} class={s.catalog__img}>
                     <img src={props.productImg} alt="#" />
-                </div>
+                </Link>
                 <div className={s.catalog__info}>
                     <div class={s.catalog__name}>
                         {props.productName}
