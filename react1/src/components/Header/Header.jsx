@@ -8,7 +8,9 @@ export default function Header(){
                     <nav className={s.header__nav}>
                         <Link to="/" className={s.nav__elem}>ГЛАВНАЯ</Link>
                         <Link to="/catalog" className={s.nav__elem}>КАТАЛОГ</Link>
-                        <Link to="/" className={s.nav__elem}>ИНФОРМАЦИЯ</Link>
+                        <Link to="/users" className={s.nav__elem}>ПОЛЬЗОВАТЕЛИ</Link>
+                        <Link to="/create" className={s.nav__elem}>ДОБАВЛЕНИЕ +</Link>
+                        <Link to="/posts" className={s.nav__elem}>ПОСТЫ</Link>
                     </nav>
                     {/* <div className={s.header__logo}>
                         FshD

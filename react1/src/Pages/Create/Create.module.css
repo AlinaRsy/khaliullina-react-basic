@@ -1,0 +1,27 @@
+.form {
+    padding: 50px 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 600px;
+    margin: 0 auto;
+}
+.form__title {
+    font-size: 40px;
+    font-weight: 500;
+    color: #99c772;
+}
+.form__input {
+    border: 2px solid #99c772;
+    padding: 15px 15px;
+}
+.form__btn{
+    border: 2px solid #99c772;
+    padding: 15px 15px;
+    background-color: transparent;
+    color: #99c772;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+}

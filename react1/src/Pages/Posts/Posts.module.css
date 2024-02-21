@@ -1,0 +1,15 @@
+.posts{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.post{
+    flex: 1 1 20%;
+    border: 1px solid #99c772;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
