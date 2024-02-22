@@ -1,0 +1,14 @@
+.accordeon__item {
+    max-width: 500px;
+    margin: auto;
+    background-color: rgb(187, 245, 192);
+    margin-top: 10px;
+}
+.accotdeon__title {display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.accordeon__text {
+    padding: 15px;
+}

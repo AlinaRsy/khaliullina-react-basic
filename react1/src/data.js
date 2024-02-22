@@ -9,36 +9,42 @@ export const catalog = [
         'productImg': t1,
         'productName': 'CLOTHES 101',
         'productText': 'CLOTHES 101 CLOTHES 101 CLOTHES 101CLOTHES 101CLOTHES 101',
-        'productPrice': 900
+        'productPrice': 900,
+        'remains': 0
     },
     {   'id': 2,
         'productImg': t2,
         'productName': 'CLOTHES 202',
         'productText': 'CLOTHES 101 CLOTHES 101 CLOTHES 101CLOTHES 101CLOTHES 101',
-        'productPrice': 899
+        'productPrice': 899,
+        'remains': 10
     },
     {   'id': 3,
         'productImg': t3,
         'productName': 'CLOTHES 303',
         'productText': 'CLOTHES 101 CLOTHES 101 CLOTHES 101CLOTHES 101CLOTHES 101',
-        'productPrice': 1266
+        'productPrice': 1266,
+        'remains': 0
     },
     {   'id': 4,
         'productImg': t4,
         'productName': 'CLOTHES 404',
         'productText': 'CLOTHES 101 CLOTHES 101 CLOTHES 101CLOTHES 101CLOTHES 101',
-        'productPrice': 799
+        'productPrice': 799,
+        'remains': 30
     },
     {   'id': 5,
         'productImg': t5,
         'productName': 'CLOTHES 505',
         'productText': 'CLOTHES 101 CLOTHES 101 CLOTHES 101CLOTHES 101CLOTHES 101',
-        'productPrice': 1119
+        'productPrice': 1119,
+        'remains': 0
     },
     {   'id': 6,
         'productImg': t6,
         'productName': 'CLOTHES 606',
         'productText': 'CLOTHES 101 CLOTHES 101 CLOTHES 101CLOTHES 101CLOTHES 101',
-        'productPrice': 1322
+        'productPrice': 1322,
+        'remains': 33
     },
 ]
