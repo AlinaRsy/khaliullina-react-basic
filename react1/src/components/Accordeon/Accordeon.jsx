@@ -4,16 +4,22 @@ export default function Accordeon({title,text}){
     const [isActive,setIsActive] = useState(false);
     return(
         <>
-        <div className={s.accordeon__item}>
-            <div className={s.accotdeon__title} onClick={()=>setIsActive(!isActive)}>
-                <p>{title}</p>
-                <p>{isActive?'-':'+'}</p>
+        <div className={s.accordeon}>
+            <div className="container">
+                <div className={s.accordeon__item}>
+                    <div className={s.accotdeon__title} onClick={()=>setIsActive(!isActive)}>
+                        <p>{title}</p>
+                        <p className={s.accordeon__btn}>{isActive?'▲':'▼'}</p>
+                    </div>
+                    {
+                        isActive &&
+                            <div className={s.accordeon__text}>{text}</div>
+                    }
+                </div>
             </div>
-            {
-                isActive &&
-                    <div className={s.accordeon__text}>{text}</div>
-            }
+       
         </div>
+        
         </>
     )
 }

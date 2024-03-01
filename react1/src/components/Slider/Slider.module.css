@@ -1,0 +1,20 @@
+.slider__title{
+    padding-top: 100px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #99c772;
+    margin-bottom: 70px;
+
+}
+.slider__place{
+    padding-bottom: 300px;
+}
+.slide{
+    width: 800px;
+    height: 400px;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -40,6 +40,14 @@
     padding: 12px 20px;
     border: 1.7px solid #99c772;
 }
+.catalog__order{
+    cursor: pointer;
+    background-color: transparent;
+    font-family: inherit;
+    color: #99c772;
+    font-weight: 500;
+    font-size: 16px;
+}
 .catalog__cart span{
     color: #99c772;
     font-weight: 500;

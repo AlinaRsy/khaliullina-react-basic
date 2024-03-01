@@ -1,0 +1,17 @@
+
+.faq{
+    width: 1300px;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq__img{
+    flex: 0 0 40%;
+    height: 500px;
+}
+.faq__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

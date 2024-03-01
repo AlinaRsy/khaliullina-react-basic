@@ -7,7 +7,7 @@ import t6 from './assets/imgs/products/t6.jpg';
 export const catalog = [
     {   'id': 1,
         'productImg': t1,
-        'productName': 'CLOTHES 101',
+        'productName': 'qweCLOTHES 101',
         'productText': 'CLOTHES 101 CLOTHES 101 CLOTHES 101CLOTHES 101CLOTHES 101',
         'productPrice': 900,
         'remains': 0

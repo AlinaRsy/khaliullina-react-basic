@@ -8,12 +8,12 @@ export default function OrderModal({modalIsOpen, setModalIsOpen, productName}){
     }
     return(
         <>  
-            <Modal isOpen={modalIsOpen}>
-                <form>
-                    <h3>Оформить заказ</h3>
-                    <h6>Вы действительно хотите {productName}</h6>
-                    <input type="text" placeholder='Ваш номер телефона'/>
-                    <button onClick={closeModal}>Закрыть</button>
+            <Modal className={s.modal} isOpen={modalIsOpen}>
+                <form className={s.form}>
+                    <h3 className={s.title}>Оформить заказ</h3>
+                    <h6 className={s.text}>Вы действительно хотите оформить заказ на {productName}?</h6>
+                    <input className={s.input} type="text" placeholder='Ваш номер телефона'/>
+                    <button className={s.btn} onClick={closeModal}>Закрыть</button>
                 </form>
             </Modal>
         </>

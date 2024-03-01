@@ -1,8 +1,17 @@
+.accordeon{
+    
+}
 .accordeon__item {
-    max-width: 500px;
-    margin: auto;
-    background-color: rgb(187, 245, 192);
+    width: 700px;
+    background-color: #99c772;
     margin-top: 10px;
+    color: white;
+}
+.accordeon__item p{
+    font-size: 20px;
+}
+.accordeon__btn{
+    font-size: 20px;
 }
 .accotdeon__title {display: flex;
     justify-content: space-between;
@@ -11,4 +20,5 @@
 }
 .accordeon__text {
     padding: 15px;
+    line-height: 170%;
 }

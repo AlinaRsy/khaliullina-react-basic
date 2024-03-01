@@ -1,0 +1,37 @@
+.modal{
+    width: 600px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    border: 1px solid #e5e5e5;
+    flex-direction: column;
+    gap: 15px;
+}
+.title{
+    font-size: 24px;
+    font-weight: 500;
+
+}
+.text{
+    font-size: 18px;
+    font-weight: 500;
+}
+.input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #99c772;
+}
+.btn{
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    background-color: #99c772;
+}

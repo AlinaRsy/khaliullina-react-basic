@@ -15,7 +15,8 @@ export default function CatalogCard(props){
                 </Link>
                 <div className={s.catalog__info}>
                     <div class={s.catalog__name}>
-                        {props.productName}
+                        {props.productName} <br />
+                        кол-во: {props.remains}
                     </div>
                     <div className={s.catalog__pay}>
                         <div class={s.catalog__price}>{props.productPrice}$</div>
