@@ -2,8 +2,9 @@ import s from './Catalog.module.css';
 import CatalogCard from './CatalogCard/CatalogCard';
 import {catalog} from '../../data';
 
-export default function Catalog({value, sorting}){
-    const products = catalog.filter(product=>product.productName.toLowerCase().includes(value.toLowerCase()));
+export default function Catalog({value, sorting, category}){
+    const products = catalog.filter(product=>product.productName.toLowerCase().includes(value.toLowerCase())
+    && product.category == category || category == 0);
     const sortProducts = (sorting, catalog)=>{
         switch(sorting){
             case 'price_asc': return [...catalog].sort((a,b)=>a.productPrice-b.productPrice);

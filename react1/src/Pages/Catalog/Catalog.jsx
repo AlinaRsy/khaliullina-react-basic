@@ -7,6 +7,7 @@ import { useState } from 'react';
 export default function CatalogPage(){
     const [search, setSearch] = useState('');
     const [sorting, setSorting] = useState(0);
+    const [category, setCategory] = useState(0);
     function sort(event){
         const sortValue = event.target.value;
         setSorting(sortValue);
@@ -27,8 +28,14 @@ export default function CatalogPage(){
                         <option value="product_desc">По количеству товаров</option>
                     </select>
                 </div>
+                <div className={s.categories}>
+                    <button onClick={()=>setCategory(0)} className={s.category}>Все товары</button>
+                    <button onClick={()=>setCategory(1)} className={s.category}>Платья</button>
+                    <button onClick={()=>setCategory(2)} className={s.category}>Брюки</button>
+                    <button onClick={()=>setCategory(3)} className={s.category}>Рубашки</button>
+                </div>
                 
-                <Catalog value={search} sorting={sorting}/>
+                <Catalog value={search} category={category} sorting={sorting}/>
             </div>
         </div>
     )
