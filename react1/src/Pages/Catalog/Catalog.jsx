@@ -4,7 +4,7 @@ import s from './Catalog.module.css';
 import { catalog } from '../../data'
 import Search from './Search/Search';
 import { useState } from 'react';
-export default function CatalogPage(){
+export default function CatalogPage({cart, setCart}){
     const [search, setSearch] = useState('');
     const [sorting, setSorting] = useState(0);
     const [category, setCategory] = useState(0);
@@ -35,7 +35,7 @@ export default function CatalogPage(){
                     <button onClick={()=>setCategory(3)} className={s.category}>Рубашки</button>
                 </div>
                 
-                <Catalog value={search} category={category} sorting={sorting}/>
+                <Catalog cart={cart} setCart={setCart} value={search} category={category} sorting={sorting}/>
             </div>
         </div>
     )

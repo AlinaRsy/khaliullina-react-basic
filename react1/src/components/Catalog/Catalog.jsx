@@ -2,7 +2,7 @@ import s from './Catalog.module.css';
 import CatalogCard from './CatalogCard/CatalogCard';
 import {catalog} from '../../data';
 
-export default function Catalog({value, sorting, category}){
+export default function Catalog({value, sorting, category, cart, setCart}){
     const products = catalog.filter(product=>product.productName.toLowerCase().includes(value.toLowerCase())
     && product.category == category || category == 0);
     const sortProducts = (sorting, catalog)=>{
@@ -18,7 +18,7 @@ export default function Catalog({value, sorting, category}){
             <div className={s.catalog__inner}>
                 {   
                     sortAndFilterProducts.map((card)=>{
-                    return <CatalogCard id={card.id} remains={card.remains} productImg={card.productImg} productName={card.productName} productText={card.productText} productPrice={card.productPrice}/>
+                        return <CatalogCard id={card.id} setCart={()=>{setCart([...cart, card.id])}} remains={card.remains} productImg={card.productImg} productName={card.productName} productText={card.productText} productPrice={card.productPrice}/>
                     })
                 }
             </div>

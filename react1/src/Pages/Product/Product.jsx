@@ -15,7 +15,7 @@ export default function ProductPage(props){
                     <p className={s.product__text}>{product.productText}</p>
                     <div className={s.product__pay}>
                         <p className={s.product__price}>{product.productPrice}$</p>
-                        <button className={s.toCart__btn}>В КОРЗИНУ</button>
+                        <button onClick={()=>{props.setCart([product.id, ...props.cart])}} className={s.toCart__btn}>В КОРЗИНУ</button>
                         <button className={s.like__btn}>
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_2221_16)">

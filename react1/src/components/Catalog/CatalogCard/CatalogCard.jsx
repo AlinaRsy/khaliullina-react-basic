@@ -22,9 +22,9 @@ export default function CatalogCard(props){
                         <div class={s.catalog__price}>{props.productPrice}$</div>
                         {props.remains==0 ? <button onClick={showModal} className={`${s.catalog__cart} ${s.catalog__order}`}>
                             ЗАКАЗАТЬ
-                        </button> : <a href="#" className={s.catalog__cart}>
+                        </button> : <button onClick={props.setCart} className={s.catalog__cart}>
                             <span>В КОРЗИНУ</span>
-                        </a>}
+                        </button>}
                         
                     </div>
                 </div>
