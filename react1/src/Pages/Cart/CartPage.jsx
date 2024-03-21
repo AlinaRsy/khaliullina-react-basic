@@ -2,8 +2,7 @@ import {catalog} from '../../data';
 import CartProduct from './CartProduct/CartProduct';
 import s from './CartPage.module.css';
 export default function CartPage({cart}){
-    const cartProducts = cart.map(id=>catalog.find(product=>product.id==id));
-
+    const cartProducts = cart.map(id=>catalog.find(product=>product.id == id));
     return(
         <>
             <div className="container">

@@ -18,7 +18,7 @@ export default function Catalog({value, sorting, category, cart, setCart}){
             <div className={s.catalog__inner}>
                 {   
                     sortAndFilterProducts.map((card)=>{
-                        return <CatalogCard id={card.id} setCart={()=>{setCart([...cart, card.id])}} remains={card.remains} productImg={card.productImg} productName={card.productName} productText={card.productText} productPrice={card.productPrice}/>
+                        return <CatalogCard id={card.id} setCart={()=>setCart([card.id, ...cart])} remains={card.remains} productImg={card.productImg} productName={card.productName} productText={card.productText} productPrice={card.productPrice}/>
                     })
                 }
             </div>
